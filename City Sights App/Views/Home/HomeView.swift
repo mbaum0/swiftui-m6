@@ -13,22 +13,29 @@ struct HomeView: View {
     
     var body: some View {
         if model.restaurants.count != 0 || model.sights.count != 0 {
-            // Determine list or map view
-            if isMapShowing {
-                // show map
-            } else {
-                // show list
-                VStack (alignment: .leading) {
-                    HStack {
-                        Image(systemName: "mappin.and.ellipse")
-                        Text("Denver, CO")
-                        Spacer()
-                        Text("Switch to map view")
+            
+            // Navigation view
+            NavigationView {
+                // Determine list or map view
+                if isMapShowing {
+                    // show map
+                } else {
+                    // show list
+                    VStack (alignment: .leading) {
+                        HStack {
+                            Image(systemName: "mappin.and.ellipse")
+                            Text("Denver, CO")
+                            Spacer()
+                            Text("Switch to map view")
+                        }
+                        Divider()
+                        BusinessList()
                     }
-                    Divider()
-                    BusinessList()
-                }.padding([.horizontal, .top])
+                    .padding([.horizontal, .top])
+                    .navigationBarHidden(true)
+                }
             }
+
         } else {
             // still waiting for data
             ProgressView()
