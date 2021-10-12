@@ -19,6 +19,8 @@ struct HomeView: View {
                 // Determine list or map view
                 if isMapShowing {
                     // show map
+                    BusinessMap()
+                        .ignoresSafeArea()
                 } else {
                     // show list
                     VStack (alignment: .leading) {
@@ -26,7 +28,9 @@ struct HomeView: View {
                             Image(systemName: "mappin.and.ellipse")
                             Text("Denver, CO")
                             Spacer()
-                            Text("Switch to map view")
+                            Button("Switch to map view") {
+                                self.isMapShowing = true
+                            }
                         }
                         Divider()
                         BusinessList()

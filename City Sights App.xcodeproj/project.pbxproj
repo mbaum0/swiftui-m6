@@ -21,6 +21,7 @@
 		4C26076827152EA500C99684 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26076727152EA500C99684 /* BusinessSection.swift */; };
 		4C26076A271530AF00C99684 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C260769271530AF00C99684 /* BusinessRow.swift */; };
 		4C26076D27153B3000C99684 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26076C27153B3000C99684 /* BusinessDetail.swift */; };
+		4C2607702715444B00C99684 /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26076F2715444B00C99684 /* BusinessMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4C26076727152EA500C99684 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
 		4C260769271530AF00C99684 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 		4C26076C27153B3000C99684 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		4C26076F2715444B00C99684 /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				4C260760271529B700C99684 /* HomeView.swift */,
 				4C26076227152CB700C99684 /* List */,
+				4C26076E2715442B00C99684 /* Map */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -167,6 +170,14 @@
 				4C26076C27153B3000C99684 /* BusinessDetail.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		4C26076E2715442B00C99684 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4C26076F2715444B00C99684 /* BusinessMap.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				4C26076D27153B3000C99684 /* BusinessDetail.swift in Sources */,
 				4C2607592715233C00C99684 /* BusinessSearch.swift in Sources */,
 				4C26076427152CC800C99684 /* BusinessList.swift in Sources */,
+				4C2607702715444B00C99684 /* BusinessMap.swift in Sources */,
 				4C26076827152EA500C99684 /* BusinessSection.swift in Sources */,
 				4C2607532714FADF00C99684 /* ContentModel.swift in Sources */,
 				4C26075C2715273800C99684 /* Constants.swift in Sources */,
