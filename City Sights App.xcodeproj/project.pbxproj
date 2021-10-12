@@ -19,6 +19,7 @@
 		4C26076427152CC800C99684 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26076327152CC800C99684 /* BusinessList.swift */; };
 		4C26076627152DFB00C99684 /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26076527152DFB00C99684 /* BusinessSectionHeader.swift */; };
 		4C26076827152EA500C99684 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26076727152EA500C99684 /* BusinessSection.swift */; };
+		4C26076A271530AF00C99684 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C260769271530AF00C99684 /* BusinessRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4C26076327152CC800C99684 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
 		4C26076527152DFB00C99684 /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
 		4C26076727152EA500C99684 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		4C260769271530AF00C99684 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				4C26076327152CC800C99684 /* BusinessList.swift */,
 				4C26076527152DFB00C99684 /* BusinessSectionHeader.swift */,
 				4C26076727152EA500C99684 /* BusinessSection.swift */,
+				4C260769271530AF00C99684 /* BusinessRow.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2607442714F9A300C99684 /* LaunchView.swift in Sources */,
+				4C26076A271530AF00C99684 /* BusinessRow.swift in Sources */,
 				4C260761271529B700C99684 /* HomeView.swift in Sources */,
 				4C26075727151C7C00C99684 /* Business.swift in Sources */,
 				4C26076627152DFB00C99684 /* BusinessSectionHeader.swift in Sources */,
