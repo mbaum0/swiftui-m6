@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C2607422714F9A300C99684 /* City_Sights_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2607412714F9A300C99684 /* City_Sights_App.swift */; };
+		4C2607422714F9A300C99684 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2607412714F9A300C99684 /* CitySightsApp.swift */; };
 		4C2607442714F9A300C99684 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2607432714F9A300C99684 /* LaunchView.swift */; };
 		4C2607462714F9A700C99684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2607452714F9A700C99684 /* Assets.xcassets */; };
 		4C2607492714F9A700C99684 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2607482714F9A700C99684 /* Preview Assets.xcassets */; };
+		4C2607532714FADF00C99684 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2607522714FADF00C99684 /* ContentModel.swift */; };
+		4C26075727151C7C00C99684 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26075627151C7C00C99684 /* Business.swift */; };
+		4C2607592715233C00C99684 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2607582715233C00C99684 /* BusinessSearch.swift */; };
+		4C26075C2715273800C99684 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26075B2715273800C99684 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C26073E2714F9A300C99684 /* City Sights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C2607412714F9A300C99684 /* City_Sights_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City_Sights_App.swift; sourceTree = "<group>"; };
+		4C2607412714F9A300C99684 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		4C2607432714F9A300C99684 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		4C2607452714F9A700C99684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C2607482714F9A700C99684 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C2607522714FADF00C99684 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		4C26075627151C7C00C99684 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		4C2607582715233C00C99684 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		4C26075B2715273800C99684 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +59,12 @@
 		4C2607402714F9A300C99684 /* City Sights App */ = {
 			isa = PBXGroup;
 			children = (
-				4C2607412714F9A300C99684 /* City_Sights_App.swift */,
+				4C2607412714F9A300C99684 /* CitySightsApp.swift */,
 				4C2607512714F9FD00C99684 /* Views */,
 				4C2607502714F9EF00C99684 /* ViewModels */,
 				4C26074F2714F9E900C99684 /* Models */,
 				4C2607452714F9A700C99684 /* Assets.xcassets */,
+				4C26075A2715272500C99684 /* Helpers */,
 				4C2607472714F9A700C99684 /* Preview Content */,
 			);
 			path = "City Sights App";
@@ -72,6 +81,8 @@
 		4C26074F2714F9E900C99684 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4C26075627151C7C00C99684 /* Business.swift */,
+				4C2607582715233C00C99684 /* BusinessSearch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,6 +90,7 @@
 		4C2607502714F9EF00C99684 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4C2607522714FADF00C99684 /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -89,6 +101,14 @@
 				4C2607432714F9A300C99684 /* LaunchView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4C26075A2715272500C99684 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4C26075B2715273800C99684 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2607442714F9A300C99684 /* LaunchView.swift in Sources */,
-				4C2607422714F9A300C99684 /* City_Sights_App.swift in Sources */,
+				4C26075727151C7C00C99684 /* Business.swift in Sources */,
+				4C2607422714F9A300C99684 /* CitySightsApp.swift in Sources */,
+				4C2607592715233C00C99684 /* BusinessSearch.swift in Sources */,
+				4C2607532714FADF00C99684 /* ContentModel.swift in Sources */,
+				4C26075C2715273800C99684 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +320,7 @@
 				DEVELOPMENT_TEAM = 8FNYG465UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restaurants and sites near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,6 +351,7 @@
 				DEVELOPMENT_TEAM = 8FNYG465UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restaurants and sites near you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
