@@ -12,6 +12,8 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     var locationManager = CLLocationManager()
     
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
     
@@ -30,6 +32,10 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     // MARK - Location Manager Delegate Methods
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        
+        // Update the authorizationState property
+        self.authorizationState = locationManager.authorizationStatus
+
         if locationManager.authorizationStatus == .authorizedAlways ||
             locationManager.authorizationStatus == .authorizedWhenInUse {
             // we have permission
@@ -85,13 +91,15 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
                         let decoder = JSONDecoder()
                         let result = try decoder.decode(BusinessSearch.self, from: data!)
                         
-                        switch category {
-                        case Constants.sightsKey:
-                            self.sights = result.businesses
-                        case Constants.restaurantsKey:
-                            self.restaurants = result.businesses
-                        default:
-                            break
+                        DispatchQueue.main.async {
+                            switch category {
+                            case Constants.sightsKey:
+                                self.sights = result.businesses
+                            case Constants.restaurantsKey:
+                                self.restaurants = result.businesses
+                            default:
+                                break
+                            }
                         }
                     } catch {
                         print(error)
